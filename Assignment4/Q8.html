@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Submission Form</title>
+</head>
+<body>
+    <h2>HTML Quiz!!</h2><br><br>
+    <form action="/submit-quiz" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" placeholder="Enter your email" required>
+        <br><br>
+
+        
+            <h2>Questions:</h2><br><br>
+            <p>1. How many levels of headings are there in HTML?</p>
+            <input type="radio" id="six" name="q1" value="6" required>
+            <label for="six">6</label><br>
+            <input type="radio" id="three" name="q1" value="3">
+            <label for="three">3</label><br>
+            <input type="radio" id="seven" name="q1" value="7">
+            <label for="seven">7</label><br><br>
+
+            <p>2. Which HTML tag is used to create a form?</p>
+            <input type="radio" id="form" name="q2" value="form" required>
+            <label for="form">&lt;form&gt;</label><br>
+            <input type="radio" id="input" name="q2" value="input">
+            <label for="input">&lt;input&gt;</label><br>
+            <input type="radio" id="table" name="2" value="table">
+            <label for="table">&lt;table&gt;</label><br><br>
+
+            <p>3. Which attribute is used to merge cells horizontally in a table?</p>
+            <input type="radio" id="colspan" name="q3" value="colspan" required>
+            <label for="colspan">colspan</label><br>
+            <input type="radio" id="rowspan" name="q3" value="rowspan">
+            <label for="rowspan">rowspan</label><br>
+            <input type="radio" id="merge" name="q3" value="merge">
+            <label for="merge">merge</label><br><br>
+        <br>
+
+        <input type="submit" value="Submit">
+        <br><br>
+        <p>Time Remaining: <span id="timerPlaceholder">2:12 min</span></p>
+    </form>
+</body>
+</html>

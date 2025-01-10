@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Lifestyle Survey</title>
+</head>
+<body>
+    <h2>Health and Lifestyle Survey</h2>
+    <p>Please complete the survey to share your health and lifestyle habits.</p>
+    <form action="/submit" method="post">
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gen" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gen" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="ht">Height (cm):</label><br>
+        <input type="number" id="ht" name="ht" placeholder="Enter your height" required><br><br>
+
+        <label for="wt">Weight (kg):</label><br>
+        <input type="number" id="wt" name="wt" placeholder="Enter your weight" required><br><br>
+
+        <label>Lifestyle Habits:</label><br>
+
+        <input type="checkbox" id="screen" name="life" value="Screen">
+        <label for="screen">Do you spend over 4 hours daily on screens?</label><br>
+        <input type="checkbox" id="smoke" name="life" value="Smoking">
+        <label for="smoke">Do you smoke more than once daily?</label><br>
+        <input type="checkbox" id="alcohol" name="life" value="Alcohol">
+        <label for="alcohol">Do you consume alcohol more than twice a week?</label><br>
+        <input type="checkbox" id="exercise" name="life" value="Exercise">
+        <label for="exercise">Do you exercise regularly for atleast 20 min daily?</label><br>
+        <input type="checkbox" id="stress" name="life" value="Stress">
+        <label for="stress">Do you often feel stressed?</label><br><br>
+
+        <label for="diet">Diet Type:</label><br>
+        <select id="diet" name="diet" required>
+            <option value="" disabled selected>Choose your diet</option>
+            <option value="veg">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="egg">Eggetarian</option>
+            <option value="nveg">Non-Vegetarian</option>
+            <option value="pesc">Pescatarian</option>
+        </select><br><br>
+
+        <label for="act">Activity Level:</label><br>
+        <select id="act" name="act" required>
+            <option value="" disabled selected>Choose activity level</option>
+            <option value="low">Sedentary</option>
+            <option value="mod">Lightly Active</option>
+            <option value="med">Moderately Active</option>
+            <option value="high">Very Active</option>
+        </select><br><br>
+
+        <label for="concerns">Health Concerns:</label><br>
+        <textarea id="concerns" name="concerns" placeholder="Enter any concerns...."></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form for an Online Event</title>
+    </head>
+    <body>
+        <h1>Register for our Online Event!!!</h1>
+        <form action="/register" method="post">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+            <label for="phoneno">Phone Number:</label><br>
+            <input type="number" id="phoneno" name="phoneno" placeholder="Phone Number" required><br><br>
+
+            <label for="gender">Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male" >Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female" >Female</label><br><br>
+
+            <label for="Age-Group" >Age Group</label>
+            <select name="agegroupe" id="Age=Group">
+                <option value="">--Please choose an option--</option>
+                <option value="child">Less than 12</option>
+                <option value="teen">13-20</option>
+                <option value="adult">21-59</option>
+                <option value="senior">Greater than 60</option>
+            </select><br><br>
+
+            <label for="int" >Choose your interests</label><br>
+            <input type="checkbox" id="music" name="int" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="dance" name="int" value="dance">
+            <label for="dance">Dance</label>
+            <input type="checkbox" id="Coding" name="int" value="Coding">
+            <label for="Coding">Coding</label>
+            <input type="checkbox" id="Sports" name="int" value="Sports">
+            <label for="Sports">e-Sports</label>
+            <input type="checkbox" id="Photography" name="int" value="Photography">
+            <label for="Photography">Photography</label>
+            <input type="checkbox" id="Editing" name="int" value="Editing">
+            <label for="Editing">Editing</label><br><br>
+
+            <label for="comments">Additional comments</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter additional comments if any"></textarea><br><br>
+
+            <input type="submit" id="register" name="register" value="Register">
+            
+
+        </form>
+    </body>
+</html>

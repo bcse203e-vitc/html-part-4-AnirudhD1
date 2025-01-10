@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking Form</title>
+</head>
+<body>
+    <h2>Book your hotel room!!</h2><br><br>
+    <form action="/book-hotel" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="info">Contact Info:</label>
+        <input type="text" id="info" name="info" placeholder="Enter your phone number" required>
+        <br><br>
+        <label for="cid">Check-in Date:</label>
+        <input type="date" id="cid" name="cid" required>
+        <br><br>
+
+        <label for="cod">Check-out Date:</label>
+        <input type="date" id="cod" name="cod" required>
+        <br><br>
+
+        <label for="nog">Number of Guests:</label>
+        <input type="number" id="nog" name="nog" min="1" placeholder="Enter number of guests" required>
+        <br><br>
+
+        <label for="type">Room Type:</label>
+        <select id="type" name="type" required>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Suite">Suite</option>
+        </select>
+        <br><br>
+            <lable for="as">Additional Services:</label>
+            <input type="checkbox" id="breakfast" name="as" value="Breakfast">
+            <label for="breakfast">Breakfast</label><br>
+            <input type="checkbox" id="airportPickup" name="as" value="Airport Pickup">
+            <label for="airportPickup">Airport Pickup</label>
+        <br>
+
+        <input type="submit" value="Book Now">
+    </form>
+</body>
+</html>
