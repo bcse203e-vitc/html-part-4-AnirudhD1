@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customizable Form Template</title>
+</head>
+<body>
+    <h2>Create Your Customizable Form</h2>
+    
+    <form action="/create-preview" method="post">
+        <label for="fname">Form Name:</label><br>
+        <input type="text" id="fname" name="fname" required placeholder="Enter your form's name"><br><br>
+
+        <label for="nof">Number of Input Fields:</label><br>
+        <input type="number" id="nof" name="nof" min="1" required placeholder="Enter number of fields it requires"><br><br>
+
+        <h3>Field Details</h3>
+        <div id="field-details">
+            <label for="fieldtype">Field Type :</label><br>
+            <select name="fieldtype" id="fieldtype" required>
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+                <option value="number">Number</option>
+                <option value="date">Date</option>
+            </select><br><br>
+
+            <label for="fieldlabel">Field Label :</label><br>
+            <input type="text" id="fieldlabel" name="field" required placeholder="Enter label"><br><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

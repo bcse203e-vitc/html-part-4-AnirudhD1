@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone Order Form</title>
+</head>
+<body>
+    <h2>Complete your Order!!</h2>
+    <form action="/display-price" method="post">
+        <label for="cust_name">Name:</label><br>
+        <input type="text" id="cust_name" name="cust_name" placeholder="Enter your full name" required><br><br>
+
+        <label for="cust_email">Email:</label><br>
+        <input type="email" id="cust_email" name="cust_email" placeholder="Enter your email address" required><br><br>
+
+        <label for="cust_addr">Address:</label><br>
+        <input type="text" id="cust_addr" name="cust_addr" placeholder="Enter your delivery address" required><br><br>
+
+        <label for="phone_model">Select Phone Model:</label><br>
+        <select id="phone_model" name="phone_model" required>
+            <option value="" disabled selected>Select a phone model</option>
+            <option value="1200">iPhone 16 Pro - ₹1200</option>
+            <option value="1000">Samsung Galaxy S24 - ₹1000</option>
+            <option value="900">Google Pixel 9 - ₹900</option>
+            <option value="850">OnePlus 12 - ₹850</option>
+            <option value="650">Nothing 2 - ₹650</option>
+        </select><br><br>
+
+        <label for="qty">Quantity:</label><br>
+        <input type="number" id="qty" name="qty" min="1" value="1" required><br><br>
+
+        <label>Delivery Option:</label><br>
+        <input type="radio" id="del_std" name="delivery" value="Standard" required>
+        <label for="del_std">Standard Delivery</label><br>
+        <input type="radio" id="del_exp" name="delivery" value="Express" required>
+        <label for="del_exp">Express Delivery</label><br><br>
+
+        <label for="coupon_code">Coupon Code (Optional):</label><br>
+        <input type="text" id="coupon_code" name="coupon_code" placeholder="Enter a valid coupon code"><br><br>
+
+        <button type="button">Check Discount</button><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

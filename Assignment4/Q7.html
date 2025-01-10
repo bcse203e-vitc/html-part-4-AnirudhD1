@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <h2>Book your Travel now!!</h2><br><br>
+    <form action="/book-travel" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+        <label for="contact">Contact Information:</label><br>
+        <input type="email" id="contact" name="contact" placeholder="Enter your email" required><br><br>
+
+        <label for="dest">Destination:</label><br>
+        <select id="dest" name="dest" required>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+        </select><br><br>
+
+        <label for="dates">Travel Dates:</label><br>
+        <input type="date" id="dates" name="dates" required><br><br>
+
+        <label for="nooft">Number of Travelers:</label><br>
+        <input type="number" id="nooft" name="nooft" min="1" required><br><br>
+
+        <label>Travel Class:</label><br>
+        <input type="radio" id="economy" name="class" value="Economy" required>
+        <label for="economy">Economy</label><br>
+        <input type="radio" id="business" name="class" value="Business" required>
+        <label for="business">Business</label><br>
+        <input type="radio" id="first" name="class" value="First Class" required>
+        <label for="first">First Class</label><br><br>
+
+        <label for="insurance">Opt for Travel Insurance:</label>
+        <input type="checkbox" id="insurance" name="insurance"><br><br>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</body>
+</html>

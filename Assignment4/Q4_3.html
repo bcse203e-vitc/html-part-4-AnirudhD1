@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+<body>
+    <h2>Fill your Work Experience</h2><br><br>
+    <form action="success.html" method="post" >
+        <label for="comp">Name of the Company you worked at:</label><br>
+        <input type="text" id="comp" name="comp" required><br><br>
+
+        <label for="desig">Your Designation: </label><br>
+        <input type="text" id="desig" name="desig" required><br><br>
+
+        <label for="durtn">Your Duration</label><br>
+        <input type="text" id="durtn" name="durtn" required><br><br>
+
+        <label for="resume">Upload your Resume:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required><br><br>
+
+        <button type="button" onclick="history.back()">Previous</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
